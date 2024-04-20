@@ -1,0 +1,61 @@
+﻿GeoFIPS,GeoName,Region
+0,United States,
+1000,Alabama,5
+2000,Alaska,8
+4000,Arizona,6
+5000,Arkansas,5
+6000,California,8
+8000,Colorado,7
+9000,Connecticut,1
+10000,Delaware,2
+11000,District of Columbia,2
+12000,Florida,5
+13000,Georgia,5
+15000,Hawaii,8
+16000,Idaho,7
+17000,Illinois,3
+18000,Indiana,3
+19000,Iowa,4
+20000,Kansas,4
+21000,Kentucky,5
+22000,Louisiana,5
+23000,Maine,1
+24000,Maryland,2
+25000,Massachusetts,1
+26000,Michigan,3
+27000,Minnesota,4
+28000,Mississippi,5
+29000,Missouri,4
+30000,Montana,7
+31000,Nebraska,4
+32000,Nevada,8
+33000,New Hampshire,1
+34000,New Jersey,2
+35000,New Mexico,6
+36000,New York,2
+37000,North Carolina,5
+38000,North Dakota,4
+39000,Ohio,3
+40000,Oklahoma,6
+41000,Oregon,8
+42000,Pennsylvania,2
+44000,Rhode Island,1
+45000,South Carolina,5
+46000,South Dakota,4
+47000,Tennessee,5
+48000,Texas,6
+49000,Utah,7
+50000,Vermont,1
+51000,Virginia,5
+53000,Washington,8
+54000,West Virginia,5
+55000,Wisconsin,3
+56000,Wyoming,7
+91000,New England,1
+92000,Mideast,2
+93000,Great Lakes,3
+94000,Plains,4
+95000,Southeast,5
+96000,Southwest,6
+97000,Rocky Mountain,7
+98000,Far West,8
