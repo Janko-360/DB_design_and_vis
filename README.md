@@ -39,7 +39,7 @@ The goal of this project was to answer a question that is complex enough to need
 ## Usage of this project 
 - Go for it, have fun. Use it how ever you want and if you can learn something new, that would be great.  
 - **BUT** don't copy this project for any academic work. My project is in the system first.  
-- Only use this to make meningful decisions when the SOC jobs to NAICS industries junction table has been finetuned. It was a fast job and is inacurate.  
+- Only use this to make meaningful decisions when the SOC jobs to NAICS industries junction table has been finetuned. It was a fast job and is inaccurate.  
 
 <br>
 
@@ -54,7 +54,7 @@ The goal of this project was to answer a question that is complex enough to need
 2. Get node.js running on your machine
    1. npm init         (in the right directory)
    3. npm install      (package.json is inluded)
-   4. npm start        (and it should start a new website with naviagtion to all the graphs)
+   4. npm start        (and it should start a new website with navigation to all the graphs)
   
 <br>
 
