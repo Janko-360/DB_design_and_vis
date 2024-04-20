@@ -26,13 +26,17 @@ The goal of this project was to answer a question that is complex enough to need
 ## A few screenshots
 ### Database schema
 ![Image](/Images/Schema.png)
+---
 ### Some of the best graphs
 ### Sum affected GDP per industry filtered by state 
 ![Image](/Images/GDP_pi_ps.png)
+---
 ### Number of affected jobs
 ![Image](/Images/Job_count.png)
+---
 ### Sum of affected salaries per industry 
 ![Image](/Images/Salaries_high_first.png)
+---
 
 <br>
 
