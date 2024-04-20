@@ -47,6 +47,7 @@ The goal of this project was to answer a question that is complex enough to need
 - MySQL
 - node.js
 - D3.js
+- and some more for the webapp
 
 ## How to run it
 1. Recreate the database with the SQL dump file. 
