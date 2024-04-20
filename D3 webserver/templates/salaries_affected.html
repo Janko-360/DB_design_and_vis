@@ -1,0 +1,66 @@
+
+<!-- The structure for all HTML pages is based on the D3 demo -->
+<!-- I changed the Body to suit my needs  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Salaries affected</title>
+
+    <style>
+      .svg-chart {
+        padding: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .svg-chart .background {
+        shape-rendering: crispEdges;
+        stroke: #ccc;
+        fill: #fdfdfd;
+        stroke-width: 1px;
+      }
+
+      .svg-chart .bar { fill: #4682B4; }
+      .svg-chart .axis-label { fill: currentColor; }
+    </style>
+
+  </head>
+  <body>
+    <br>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <h1>This graph shows the salaries that are at risk</h1>
+    <p>This is only an estimation.</p>
+    <p>This data means that the salary values are no longer available to the people and thus reducing the local money circulation.</p>
+    <p>Note: </p>
+    <ul>
+      <li>This just means that on an average total, the amount of money will be used somewhere else and no longer as salaries; and that, nation wide</li>
+      <li>These values are affected by the number of people in the job type and how much they make</li>
+      <li>Some jobs have 0 (no losses), this is due to the fact that no or less than 10 jobs were logged fro the job count per state</li>
+    </ul> 
+    <!-- Form based on https://www.w3schools.com/html/html_forms.asp -->
+    <form method="POST" action="/salaries_affected">   
+        <h4>Sort by</h4>
+        <input id="max" type="radio" name="sort_by" value="max"/>
+        <label for="max">20 highest first</label><br>
+        <input id="min" type="radio" name="sort_by" value="min"/>
+        <label for="min">20 lowest first (excluding no losses)</label><br>    <br>
+        <input type="submit" value="Sort"/>
+    </form>
+    <br>
+    <%-
+    barChartHelper.getBarChart({
+      data: data,
+      width: 1200,
+      height: 500,
+      xAxisLabel: 'States',
+      yAxisLabel: '',
+      containerId: 'bar-chart-small', 
+      axisLabelMargin: 100
+    })
+  %>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+
+<!-- The structure for all HTML pages is based on the D3 demo -->
+<!-- I changed the Body to suit my needs  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>D3.js Server-side Demo</title>
+
+    <style>
+      .svg-chart {
+        padding: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .svg-chart .background {
+        shape-rendering: crispEdges;
+        stroke: #ccc;
+        fill: #fdfdfd;
+        stroke-width: 1px;
+      }
+
+      .svg-chart .bar { fill: #4682B4; }
+      .svg-chart .axis-label { fill: currentColor; }
+    </style>
+
+  </head>
+  <body>
+    <br>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <h1>This graph shows the GDP per capita per state that is at risk</h1>
+    <p>Again this is only an estimation.</p>
+    <p>This means that the GDP is no longer produced by the workers but by the machines</p>
+    <br>
+    <%-
+    barChartHelper.getBarChart({
+      data: data,
+      width: 1200,
+      height: 500,
+      xAxisLabel: 'States',
+      yAxisLabel: '',
+      containerId: 'bar-chart-small', 
+      axisLabelMargin: 60
+    })
+  %>
+  </body>
+</html>

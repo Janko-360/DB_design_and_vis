@@ -1,0 +1,21 @@
+{
+  "name": "d3-data-viz",
+  "description": "Present info from an investigation into USA automation data",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo no tests"
+  },
+  "dependencies": {
+    "d3": "^5.16.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "jsdom": "^16.2.2",
+    "mysql": "^2.18.1"
+  }
+}

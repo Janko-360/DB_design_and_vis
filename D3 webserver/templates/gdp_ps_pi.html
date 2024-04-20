@@ -1,0 +1,62 @@
+
+<!-- The structure for all HTML pages is based on the D3 demo -->
+<!-- I changed the Body to suit my needs  --> 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GDP ps pi</title>
+    <style>
+      .svg-chart {
+        padding: 4px;
+        border: 1px solid #ccc;
+      }
+      .svg-chart .background {
+        shape-rendering: crispEdges;
+        stroke: #ccc;
+        fill: #fdfdfd;
+        stroke-width: 1px;
+      }
+      .svg-chart .bar { fill: #4682B4; }
+      .svg-chart .axis-label { fill: currentColor; }
+    </style>
+  </head>
+  <body>
+    <br>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <h1>This graph shows the GDP values per state and industry that are at risk</h1>
+    <p>This is only an estimation.</p>
+    <p>The data describes the GDP for the main industry types and all the jobs in that industry. That info for the selected state</p>
+    <!-- Form based on https://www.w3schools.com/html/html_forms.asp -->
+    <form method="POST" action="/gdp_ps_pi">  
+        <label for="states">Choose a state:</label>
+        <select id="states" name="states">
+          // The idea to use the raw JS functionality came form my previous Databases, Networks and the Web course
+          <% let all_states = [ 'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 
+          'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 
+          'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'Wisconsin', 'Wyoming'] %>
+          <% for (let i=0; i < all_states.length; i++) { %>
+            <option value="<%= all_states[i] %>"><%= all_states[i] %></option>
+          <% } %>
+        </select> 
+        <br>
+        <input type="submit" value="Sort"/>
+    </form>
+    <br>
+    <%-
+    barChartHelper.getBarChart({
+      data: data,
+      width: 1200,
+      height: 500,
+      xAxisLabel: 'States',
+      yAxisLabel: '',
+      containerId: 'bar-chart-small', 
+      axisLabelMargin: 100
+    })
+  %>
+  </body>
+</html>

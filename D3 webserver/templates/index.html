@@ -1,0 +1,42 @@
+
+<!-- The structure for all HTML pages is based on the D3 demo -->
+<!-- I changed the Body to suit my needs  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>D3.js Server-side Demo</title>
+
+    <style>
+      .svg-chart {
+        padding: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .svg-chart .background {
+        shape-rendering: crispEdges;
+        stroke: #ccc;
+        fill: #fdfdfd;
+        stroke-width: 1px;
+      }
+
+      .svg-chart .bar { fill: #4682B4; }
+      .svg-chart .axis-label { fill: currentColor; }
+    </style>
+
+  </head>
+  <body>
+    <br>
+    <nav>
+      <a href="/jobs_affected">Jobs affected</a>
+      <a href="/salaries_affected">Salaries affected</a>
+      <a href="/gdp_pc_affected">GDP per capita</a>
+      <a href="/gdp_ps_pi">GDP per state per industry</a>
+    </nav>
+    <br>
+    <h1>Investigating the affect of automation on the local economy of the USA</h1>
+    <p>This webapp serves to inform about the estimated affects that automation could have on American jobs, local and national economy</p>
+  </body>
+</html>
