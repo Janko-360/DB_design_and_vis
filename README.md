@@ -1,6 +1,6 @@
 # DB_design_and_vis
 
-The goal of this project was to answer a question that is complex enough to need more than one data source to sufficiently solve it. Two data sources were consulted to create a database. That database would then be queried for information to determine the potential effect of automation on various aspects of the economy of the USA. 
+The goal of this project was to answer a question that is complex enough to need more than one data source to sufficiently solve it. Two data sources were consulted to create a database. That database would then be queried for information **to determine the potential effect of automation on various aspects of the economy of the USA**. 
 
 **PLEASE note**, this is just a academic project and not an accurate prediction or account of what happened. Only what could happen based on the probabilistic estimation from this [report](http://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf).  
 
