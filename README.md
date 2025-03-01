@@ -1,4 +1,4 @@
-# DB_design_and_vis
+# Data base design and visualization 
 
 The goal of this project was to answer a question that is complex enough to need more than one data source to sufficiently solve it. Two data sources were consulted to create a database. That database would then be queried for information **to determine the potential effect of automation on various aspects of the economy of the USA**. 
 
@@ -6,7 +6,12 @@ The goal of this project was to answer a question that is complex enough to need
 
 <br>
 
-## Methodology 
+## Latest update: migration to BigQuery
+The migration of the SQL data to GCP's BigQuery. Then adapting the old queries to BigQuery syntax to create new tables that are then used by Looker for visualization.  
+Here is the final dashboard from Looker:  
+![Image](/Images/Looker%20screenshot.png)
+  
+## Methodology and construction of the original database  
 1. Formulate research question
 2. Find open datasets to use
     1. The primary data set was the *Occupations by State and Likelihood of Automation* dataset from [data.world](https://data.world/wnedds/occupations-by-state-and-likelihood-of-automation)
